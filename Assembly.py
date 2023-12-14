@@ -315,7 +315,7 @@ class Application:
                 return None        
 
         # Apply the function 
-        result_df['TOTAL REPEATING CHARACTERS'] = result_df.apply(calculate_score, axis=1)
+        result_df['TOTAL COMMENTS TAGGED WITH PATTERNS'] = result_df.apply(calculate_score, axis=1)
 
         # Handling any Nan values
         rows = result_df[result_df['PATTERN FOUND OR NOT'] == 'Not_found'].index
